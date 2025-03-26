@@ -18,7 +18,7 @@
             <div class="product-container">
                 <div class="product-image">
                     <!--IMAGEM DO PRODUTO-->
-                    <img src="assets/image/t-shirt-blue.png" alt="product-image">
+                    <img :src="image" alt="product-image">
                 </div>
                 <div class="product-info">
                     <!--INFO DO PRODUTO-->
@@ -36,7 +36,8 @@
             setup() {
                 const message = ref('Hello vue!!')
                 return {
-                    message
+                    message ,
+                    image: ref("assets/image/t-shirt-blue.png")
                 }
             }
         }).mount('#app')
