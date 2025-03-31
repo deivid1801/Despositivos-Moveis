@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div id="app" class="div">
         <div class="product-display">
             <div class="product-container">
@@ -34,6 +35,22 @@
                     <div v-for="variant in variants">
                         {{ variant.color }}
                     </div>
+=======
+    <div id="app">
+        <div class="product-display">
+            <div class="product-container">
+                <div class="product-image">
+                    <!--IMAGEM PRODUTO-->
+                    <img :src="image" alt="img-product">
+
+                </div>
+                <div class="product-info">
+
+                    <!--INFORMAÇÃO PRODUTO-->
+                    <h1>T-Shirt</h1>
+                    <p>In Stock</p>
+
+>>>>>>> 65a79c2de9e27e6652762d54580cee5d97614282
                 </div>
             </div>
         </div>
@@ -46,11 +63,16 @@
             setup() {
                 
                 return {
+<<<<<<< HEAD
                    product_title: ref('T-Shirt'),
                     image: ref("assets/image/t-shirt-blue.png"),
                     inStock: ref(8),
                     details:['50% cotton', '30% Polyester', '20% woll'],
                     variants: [{id:1, color:'blue'},{id:2, color:'green'}]
+=======
+                    message,
+                    image: ref ("./assets/t-shirt-blue.png")
+>>>>>>> 65a79c2de9e27e6652762d54580cee5d97614282
                 }
             }
         }).mount('#app')
